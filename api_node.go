@@ -5,7 +5,7 @@ import (
 )
 
 // APINodeList represents list of nodes
-type APINodeList []ApiNode
+type APINodeList []APINode
 
 // APINode contains single node
 type APINode struct {
