@@ -1,5 +1,9 @@
 package shared
 
+import (
+	"time"
+)
+
 type ApiNodeList []ApiNode
 
 type ApiNode struct {
