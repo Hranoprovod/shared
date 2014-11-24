@@ -19,3 +19,11 @@ type APINode struct {
 	UserID       string    `json:"-"`
 	Created      time.Time `json:"created"`
 }
+
+// APIError holds service error
+type APIError struct {
+	IsError bool   `json:"is_error"`
+	Code    int    `json:"code"`
+	Status  string `json:"status"`
+	Message string `json:"message"`
+}
