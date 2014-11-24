@@ -4,9 +4,11 @@ import (
 	"time"
 )
 
-type ApiNodeList []ApiNode
+// APINodeList represents list of nodes
+type APINodeList []ApiNode
 
-type ApiNode struct {
+// APINode contains single node
+type APINode struct {
 	Name         string    `json:"name"`
 	Slug         string    `json:"slug"`
 	Calories     float64   `json:"calories"`
@@ -14,6 +16,6 @@ type ApiNode struct {
 	Carbohydrate float64   `json:"carbohydrate"`
 	Protein      float64   `json:"protein"`
 	Barcode      string    `json:"barcode,omitempty"`
-	UserId       string    `json:"-"`
+	UserID       string    `json:"-"`
 	Created      time.Time `json:"created"`
 }
