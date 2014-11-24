@@ -16,7 +16,7 @@ type APINode struct {
 	Carbohydrate float64   `json:"carbohydrate"`
 	Protein      float64   `json:"protein"`
 	Barcode      string    `json:"barcode,omitempty"`
-	UserID       string    `json:"-"`
+	UserId       string    `json:"-"`
 	Created      time.Time `json:"created"`
 }
 
