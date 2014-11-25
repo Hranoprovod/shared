@@ -2,8 +2,8 @@ package shared
 
 // Node contains general node data
 type Node struct {
-	header   string
-	elements *Elements
+	Header   string
+	Elements *Elements
 }
 
 // NewNode creates new geneal node
@@ -22,6 +22,7 @@ func NewNodeList() *NodeList {
 	return &NodeList{}
 }
 
-func (db *NodeList) push(node *Node) {
-	(*db)[(*node).header] = node
+// Push adds node to the node list
+func (db *NodeList) Push(node *Node) {
+	(*db)[(*node).Header] = node
 }

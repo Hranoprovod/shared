@@ -13,7 +13,7 @@ func TestNodeList(t *testing.T) {
 		})
 		Convey("Adding new node", func() {
 			node := NewNode("test")
-			nl.push(node)
+			nl.Push(node)
 			Convey("Increases the number of nodes in the list", func() {
 				So(len(*nl), ShouldEqual, 1)
 			})
