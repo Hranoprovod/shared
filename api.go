@@ -27,3 +27,7 @@ type APIError struct {
 	Status  string `json:"status"`
 	Message string `json:"message"`
 }
+
+func (ae APIError) Error () string {
+	return ae.Status + ": " + ae.Message
+}
