@@ -19,4 +19,8 @@ func TestNewLogNode(t *testing.T) {
 			So((*logNode.Elements)[0].Val, ShouldEqual, 1.22)
 		})
 	})
+	Convey("Given Node", t, func() {
+		Convey("Creates new node on valid date", nil)
+		Convey("Generates error on invalid date", nil)
+	})
 }
